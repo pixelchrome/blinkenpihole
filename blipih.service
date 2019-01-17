@@ -1,0 +1,10 @@
+[Unit]
+Description=Blinken Pi-hole
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/sudo /usr/bin/python /usr/local/sbin/blipih.py
+
+[Install]
+WantedBy=multi-user.target
