@@ -69,3 +69,5 @@ and add the following to `/etc/cron.d/pihole`. The job should start one minute a
 # Restart the Blinken Pi-hole service after the logrotate
 00 01	* * *	root /bin/systemctl restart blipih.service
 ```
+
+**Check after each `pihole -up` that this entry still exists**
